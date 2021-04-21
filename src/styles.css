@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 20px;
   background-color: #fefefe;
-  color: #2a2a2a;
+  color: black;
   line-height: 1.3;
   font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
@@ -40,9 +40,58 @@ h1 {
   text-align: center;
   font-size: 28px;
   font-weight: bold;
-  color: #bf4f51;
+  color: #bcc4d3;
+  /* color: #bf4f51; */
 }
 .components {
   display: flex;
   flex-wrap: wrap;
+}
+
+.TodoEditor {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: #fff;
+  /* border: 1px solid #bda1a1;
+  box-shadow: 0 0 14px 0px #bda1a1; */
+  border: 1px solid #bcc4d3;
+  box-shadow: 0 0 14px 0px #bcc4d3;
+  margin-bottom: 10px;
+}
+
+.TodoEditor__textarea {
+  --line-height: 16px;
+
+  height: --line-height * 3 + 24px;
+  padding: 12px 16px;
+  border: 1px solid bcc4d3;
+  border-radius: 5px;
+
+  font: inherit;
+  line-height: --line-height;
+  letter-spacing: 0.01em;
+
+  resize: none;
+  margin-bottom: 12px;
+}
+.TodoEditor__button {
+  display: block;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 100px;
+  background-color: #8bbabb;
+  color: #fff;
+  font-weight: 500;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 2px 2px 0 rgb(0 0 0 / 0.5);
+  transition: box-shadow 250ms linear;
+}
+.TodoEditor__button:active {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
